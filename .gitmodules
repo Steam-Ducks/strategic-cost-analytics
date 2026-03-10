@@ -1,0 +1,6 @@
+[submodule "sca-server"]
+	path = sca-server
+	url = git@github.com:Steam-Ducks/sca-server.git
+[submodule "sca-client"]
+	path = sca-client
+	url = git@github.com:Steam-Ducks/sca-client.git
