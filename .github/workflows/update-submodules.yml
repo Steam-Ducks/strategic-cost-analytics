@@ -40,10 +40,12 @@ jobs:
         run: |
           TARGET="${{ steps.target.outputs.submodule }}"
 
+          git submodule sync --recursive
+
           if [[ "$TARGET" == "all" || -z "$TARGET" ]]; then
-            git submodule update --remote --merge
+            git submodule update --init --remote --recursive
           else
-            git submodule update --remote --merge "$TARGET"
+            git submodule update --init --remote "$TARGET"
           fi
 
       - name: Check for changes
@@ -61,5 +63,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "chore: update submodules to latest"
+          git commit -m "chore(submodules): update to latest commit"
           git push
