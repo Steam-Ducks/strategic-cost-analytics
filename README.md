@@ -2,6 +2,22 @@
 <img src="assets/header.png" alt="SCARS project header" width="100%" />
 </div>
 
+## Table of Contents
+
+- [Introduction](#about)
+- [Contributors](#team)
+- [Business Questions](#business-questions)
+- [Functional Requirements](#functional-requirements)
+- [Non-Functional Requirements](#non-functional-requirements)
+- [Product Backlog](#backlog)
+- [Delivery Schedule](#schedule)
+- [Sprint Summary](#sprint-summary)
+- [Burndown](#burndown)
+- [SonarCloud / Quality Reports](#quality-reports)
+- [Documentation](#documentation)
+- [Definition of Ready (DoR) and Definition of Done (DoD)](#dor-dod)
+- [Tech Stack](#tech-stack)
+
 <span id="about"></span>
 
 ## 📍 Introduction
@@ -24,12 +40,9 @@ One of its most relevant initiatives is **MANSUP (National Surface Anti-Ship Mis
 
 <br>
 
-> Data Warehouse development;
-
-> Cost analytics and decision support;
-
-> Historical and multidimensional analysis;
-
+> Data Warehouse development;  
+> Cost analytics and decision support;  
+> Historical and multidimensional analysis;  
 > Budget and financial health monitoring.
 
 <span id="team"></span>
@@ -47,6 +60,8 @@ Mariana Oliveira | Dev Team | <a href="https://github.com/mariinetic"><img src="
 Rafaella Cruz | Dev Team | <a href="https://github.com/arafaellacruz"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/rafaella-cruz"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/arafaellacruz.png" width="60"> |
 Samuel Prado | Dev Team | <a href="https://github.com/Samuelprado99"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/samuel-prado-9142381b6"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/Samuelprado99.png" width="60"> |
 
+<span id="business-questions"></span>
+
 ## Business Questions
 
 The solution is expected to answer questions such as:
@@ -59,6 +74,8 @@ The solution is expected to answer questions such as:
 - What is the percentage deviation of each project?
 - What is the financial health classification of each project?
 - Which projects are at risk of budget overrun?
+
+<span id="functional-requirements"></span>
 
 ## Functional Requirements
 
@@ -87,6 +104,8 @@ The solution is expected to answer questions such as:
 | FR21 | Display data lineage and source traceability for consolidated metrics. | US30 |
 | FR22 | Display integration/update failures and detailed load history. | US31, US33, US34 |
 | FR23 | Display audit trail related to system access and data operations. | US35 |
+
+<span id="non-functional-requirements"></span>
 
 ## Non-Functional Requirements
 
@@ -167,6 +186,8 @@ Sprint Review / Planning | 2026-05-04 | 2026-05-08
 Sprint 3 | 2026-05-11 | 2026-05-31
 Sprint Review / Planning | 2026-06-01 | 2026-06-05
 Solutions Fair | 2026-06-11 | 2026-06-11
+
+<span id="sprint-summary"></span>
 
 ## Sprint Summary 📋
 
@@ -313,17 +334,23 @@ Design and implement a Data Warehouse capable of consolidating strategic cost da
 
 </details>
 
+<span id="burndown"></span>
+
 ## Burndown 🔥
 
 ![Sprint 1 Burndown](docs/burndown/sprint-1.png)
 ![Sprint 2 Burndown](docs/burndown/sprint-2.png)
 ![Sprint 3 Burndown](docs/burndown/sprint-3.png)
 
+<span id="quality-reports"></span>
+
 ## SonarCloud / Quality Reports 📑
 
 ![Sprint 1 SonarCloud](docs/tests/sonarcloud/sprint-1.png)
 ![Sprint 2 SonarCloud](docs/tests/sonarcloud/sprint-2.png)
 ![Sprint 3 SonarCloud](docs/tests/sonarcloud/sprint-3.png)
+
+<span id="documentation"></span>
 
 ## Documentation 📁
 
@@ -336,6 +363,37 @@ Design and implement a Data Warehouse capable of consolidating strategic cost da
 - [Version Control and Branching Strategy](docs/process/branch-strategy.md)
 - [Continuous Integration Strategy](docs/process/continuous-integration-strategy.md)
 - [Commit Standard](docs/process/commit-standard.md)
+
+<span id="dor-dod"></span>
+
+## Definition of Ready (DoR) and Definition of Done (DoD)
+
+In order to standardize the team's workflow, general criteria were established to define when a task is ready to enter the backlog, ready for development, and considered completed.
+
+### Definition of Ready (Backlog)
+A task is considered ready to enter the backlog when:
+
+- it has a clear description, prepared by the Product Owner, with well-defined acceptance criteria;
+- it is properly prioritized and has an estimated level of complexity;
+- its objective, business value, and impact are clearly defined and aligned with the stakeholder(s).
+
+### Definition of Ready (Development)
+A task is considered ready to begin development when:
+
+- it has a design (wireframe or visual reference) reviewed and approved by the team;
+- it has documented, clear, and accessible business rules;
+- it has no dependencies or blockers preventing the start of implementation.
+
+### Definition of Done
+A task is considered done when:
+
+- all acceptance criteria have been met;
+- unit tests and integration tests have been implemented and are passing;
+- the code has gone through code review, when applicable;
+- the merge has been completed and the feature has been tested in the testing/homologation branch;
+- there are no critical errors, known failures, or inconsistent behaviors.
+
+<span id="tech-stack"></span>
 
 ## 💻 Tech Stack
 
