@@ -1,32 +1,14 @@
 <div align="center">
-<img src="assets/header.png" alt="SCARS project header" width="100%" />
+<img src="assets/header.png" alt="SCAR project header" width="100%" />
 </div>
 
-## Table of Contents
-
-- [Introduction](#about)
-- [Contributors](#team)
-- [Business Questions](#business-questions)
-- [Functional Requirements](#functional-requirements)
-- [Non-Functional Requirements](#non-functional-requirements)
-- [Product Backlog](#backlog)
-- [Delivery Schedule](#schedule)
-- [Sprint Summary](#sprint-summary)
-- [Burndown](#burndown)
-- [SonarCloud / Quality Reports](#quality-reports)
-- [Documentation](#documentation)
-- [Definition of Ready (DoR) and Definition of Done (DoD)](#dor-dod)
-- [Tech Stack](#tech-stack)
-
-<span id="about"></span>
-
-## 📍 Introduction
+## Introduction
 
 This project was developed by **STEAM DUCKS**, a team of students from the 5th semester of the **Database program at FATEC São José dos Campos**.
 
-The proposal is to build **SCARS**, an analytical solution for consolidating and visualizing strategic project costs, developed in partnership with **SIATT**.
+The proposal is to build **SCAR**, an analytical solution for consolidating and visualizing strategic project costs, developed in partnership with **SIATT**.
 
-The acronym **SCARS** comes from the original Portuguese project name, **Sistema de Controle e Acompanhamento de Recursos Soberanos**.
+The acronym **SCAR** comes from the original Portuguese project name, **Sistema de Controle e Acompanhamento de Recursos**.
 
 The project aims to design and implement a **Data Warehouse** capable of consolidating data related to **materials**, **technical labor hours**, **projects**, **programs**, and **budget indicators**, enabling structured and historical analysis to support decision-making.
 
@@ -45,22 +27,6 @@ One of its most relevant initiatives is **MANSUP (National Surface Anti-Ship Mis
 > Historical and multidimensional analysis;  
 > Budget and financial health monitoring.
 
-<span id="team"></span>
-
-## Contributors
-
-Name | Role | Networking | Profile
---- | --- | --- | ---
-Alexander Silva | Dev Team | <a href="https://github.com/alexttz"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/alexander-silva-lima-96a0432a6"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/alexttz.png" width="60"> |
-Carlos Daniel | Scrum Master | <a href="https://github.com/darloscaniel"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/carlos-daniel-9516952b4"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/darloscaniel.png" width="60"> |
-Felipe Reis | Dev Team | <a href="https://github.com/felpzreiz"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/felipe-reiss/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/felpzreiz.png" width="60"> |
-Isabelly Sousa | Dev Team | <a href="https://github.com/61isabelly"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/isabelly-sousa"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/61isabelly.png" width="60"> |
-Luiz Henrique | Product Owner | <a href="https://github.com/LuizHRFerreira"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/luiz-henrique-rabello-ferreira-3600752ba"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/LuizHRFerreira.png" width="60"> |
-Mariana Oliveira | Dev Team | <a href="https://github.com/mariinetic"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/oliveirasmari/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/mariinetic.png" width="60"> |
-Rafaella Cruz | Dev Team | <a href="https://github.com/arafaellacruz"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/rafaella-cruz"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/arafaellacruz.png" width="60"> |
-Samuel Prado | Dev Team | <a href="https://github.com/Samuelprado99"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/samuel-prado-9142381b6"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/Samuelprado99.png" width="60"> |
-
-<span id="business-questions"></span>
 
 ## Business Questions
 
@@ -74,8 +40,6 @@ The solution is expected to answer questions such as:
 - What is the percentage deviation of each project?
 - What is the financial health classification of each project?
 - Which projects are at risk of budget overrun?
-
-<span id="functional-requirements"></span>
 
 ## Functional Requirements
 
@@ -105,8 +69,6 @@ The solution is expected to answer questions such as:
 | FR22 | Display integration/update failures and detailed load history. | US31, US33, US34 |
 | FR23 | Display audit trail related to system access and data operations. | US35 |
 
-<span id="non-functional-requirements"></span>
-
 ## Non-Functional Requirements
 
 | ID | Item |
@@ -124,251 +86,88 @@ The solution is expected to answer questions such as:
 | NFR11 | Data traceability, auditability, and analytical reliability. |
 | NFR12 | Export operations must preserve active filters and analytical context. |
 
-<span id="backlog"></span>
+## Product Backlog
 
-## Product Backlog 🔍
+| ID | Epic | User Story | Priority | Points | Sprint |
+|----|------|------------|----------|--------|--------|
+| US01 | Access and Control | As a user, I want to authenticate in the system, so that I can access the analytical environment securely. | Low | 2 | 3 |
+| US02 | Access and Control | As an authenticated user, I want to access features according to my user type, so that I can use the application with the appropriate level of access. | Low | 2 | 3 |
+| US03 | Access and Control | As an administrator, I want to manage system users, so that I can keep application access updated and centrally controlled. | Low | 3 | 3 |
+| US04 | Main Dashboard | As a manager, I want to view the base structure of the main dashboard, so that I can access the executive analytical view of the solution. | Highest | 2 | 1 |
+| US05 | Main Dashboard | As a manager, I want to view the main dashboard indicators, so that I can quickly understand the main consolidated metrics. | Highest | 3 | 1 |
+| US06 | Main Dashboard | As an analyst, I want to filter the dashboard by period, so that I can analyze cost evolution within specific time ranges. | Highest | 2 | 1 |
+| US07 | Main Dashboard | As an analyst, I want to filter the dashboard by program and project, so that I can analyze specific organizational contexts. | Highest | 3 | 1 |
+| US08 | Main Dashboard | As a manager, I want to view the consolidated total cost, so that I can quickly understand the total value associated with the analyzed projects. | Highest | 2 | 1 |
+| US09 | Main Dashboard | As a manager, I want to view the total cost by program, so that I can compare programs from a consolidated cost perspective. | High | 2 | 1 |
+| US10 | Main Dashboard | As a manager, I want to view the total cost by project, so that I can identify the projects with the greatest financial impact. | High | 2 | 1 |
+| US11 | Main Dashboard | As a manager, I want to view cost evolution over time, so that I can identify trends, variations, and historical behavior. | High | 3 | 1 |
+| US12 | Main Dashboard | As a manager, I want to view the cost composition between materials and technical hours, so that I can understand the weight of each component in the total cost. | Medium | 2 | 2 |
+| US13 | Main Dashboard | As a manager, I want to view the materials with the highest financial impact, so that I can identify critical cost items. | Medium | 2 | 2 |
+| US14 | Main Dashboard | As a manager, I want to view the projects with the highest cost, so that I can prioritize managerial attention on the most relevant projects. | Medium | 2 | 2 |
+| US15 | Main Dashboard | As an analyst, I want to view a summary table in the dashboard, so that I can validate and compare the values shown in the charts. | Medium | 3 | 2 |
+| US16 | Materials | As an analyst, I want to view the base structure of the materials analytics screen, so that I can access an organized view of material cost and consumption. | High | 2 | 1 |
+| US17 | Materials | As an analyst, I want to view material indicators and the analytical table, so that I can monitor material cost and consumption by project. | High | 3 | 1 |
+| US18 | Materials | As an analyst, I want to filter material analysis by item, supplier, and category, so that I can refine the investigation of cost and consumption from different perspectives. | Medium | 2 | 2 |
+| US19 | Materials | As a manager, I want to view material cost by project, so that I can understand the financial impact of materials in each project. | Medium | 3 | 2 |
+| US20 | Materials | As an analyst, I want to view material consumption over time, so that I can identify increases, reductions, and seasonality in material usage. | Medium | 3 | 3 |
+| US21 | Technical Hours | As an analyst, I want to view the base structure of the technical hours screen, so that I can access an organized view of effort and labor cost by project. | Medium | 2 | 2 |
+| US22 | Technical Hours | As an analyst, I want to view indicators and a table in the technical hours analysis screen, so that I can monitor cost and effort by project. | Medium | 3 | 2 |
+| US23 | Technical Hours | As an analyst, I want to filter technical hours analysis by employee, role, and task, so that I can refine the investigation of technical effort from different perspectives. | Medium | 2 | 2 |
+| US24 | Technical Hours | As a manager, I want to view hours by project, so that I can identify where the greatest technical effort is allocated. | Medium | 3 | 3 |
+| US25 | Technical Hours | As a manager, I want to view hourly cost by employee or role, so that I can analyze where labor cost is concentrated. | Low | 3 | 3 |
+| US26 | Technical Hours | As an analyst, I want to view the time evolution of hours, so that I can analyze the pace of execution over time. | Low | 3 | 3 |
+| US27 | Consolidated View | As a manager, I want to view a consolidated cost screen, so that I can compare materials and technical hours in a single view by project and program. | Medium | 5 | 2 |
+| US28 | Export | As a user, I want to export analytical data to CSV, so that I can perform complementary analysis outside the system. | Low | 2 | 3 |
+| US29 | Export | As a user, I want to export analytical data to Excel, so that I can share and manipulate results in a corporate format. | Low | 2 | 3 |
+| US30 | Data Traceability | As an administrator, I want to view the source of consolidated data, so that I can audit which source system and record originated the analytical values. | Low | 3 | 3 |
+| US31 | Data Traceability | As an administrator, I want to identify data update or integration failures, so that I can act quickly when analytical data becomes inconsistent. | Low | 3 | 3 |
+| US32 | Data Traceability | As a user, I want to view the date of the latest data update, so that I know whether the information shown is up to date. | Medium | 1 | 2 |
+| US33 | Audit / Loads | As an administrator, I want to view data load history, so that I can monitor the reliability and freshness of the analytical environment. | Low | 3 | 3 |
+| US34 | Audit / Loads | As an administrator, I want to view details of load failures, so that I can diagnose update and import problems. | Low | 3 | 3 |
+| US35 | Audit / Loads | As an administrator, I want to view the access audit trail, so that I can track who used the application and when. | Low | 3 | 3 |
+| US36 | Budget and Financial Health | As a manager, I want to view budget by program and project, so that I can compare planned values with actual costs. | High | 3 | 2 |
+| US37 | Budget and Financial Health | As a manager, I want to view the percentage deviation of projects, so that I can understand budget consumption relative to the estimated budget. | High | 3 | 2 |
+| US38 | Budget and Financial Health | As a manager, I want to view the financial health status of projects, so that I can identify which projects are healthy, under attention, or critical. | High | 3 | 2 |
+| US39 | Budget and Financial Health | As a manager, I want to view projected budget overrun, so that I can anticipate financial risks and prioritize corrective actions. | Medium | 2 | 3 |
+| US40 | Data Import | As an analytical system, I want to receive data through CSV files provided by the client, so that the initial load and data preparation can be performed without depending on API integration. | High | 1 | 2 |
 
-| Rank | Priority | User Story | Story Points | Sprint |
-|---|---|---|---:|---:|
-| 1 | Highest | US04 — View the main dashboard base structure | 2 | 1 |
-| 2 | Highest | US05 — View the main dashboard indicators | 3 | 1 |
-| 3 | Highest | US06 — Filter dashboard by period | 2 | 1 |
-| 4 | Highest | US07 — Filter dashboard by program and project | 3 | 1 |
-| 5 | Highest | US08 — View consolidated total cost | 2 | 1 |
-| 6 | High | US09 — View total cost by program | 2 | 1 |
-| 7 | High | US10 — View total cost by project | 2 | 1 |
-| 8 | High | US11 — View cost evolution over time | 3 | 1 |
-| 9 | High | US16 — View the base structure of the materials analysis screen | 2 | 1 |
-| 10 | High | US17 — View indicators and table for materials analysis | 3 | 1 |
-| 11 | Medium | US12 — View cost composition between materials and labor hours | 2 | 2 |
-| 12 | Medium | US13 — View materials with highest financial impact | 2 | 2 |
-| 13 | Medium | US14 — View projects with highest cost | 2 | 2 |
-| 14 | Medium | US15 — View dashboard summary table | 3 | 2 |
-| 15 | Medium | US27 — View consolidated cost screen | 5 | 2 |
-| 16 | Medium | US18 — Filter materials analysis by item, supplier, and category | 2 | 2 |
-| 17 | Medium | US19 — View material cost by project | 3 | 2 |
-| 18 | Medium | US21 — View the base structure of the technical labor screen | 2 | 2 |
-| 19 | Medium | US22 — View indicators and table for technical labor analysis | 3 | 2 |
-| 20 | Medium | US23 — Filter labor analysis by employee, role, and task | 2 | 2 |
-| 21 | Medium | US32 — View the last data refresh timestamp | 1 | 2 |
-| 22 | High | US36 — View budget by program and project | 3 | 2 |
-| 23 | High | US37 — View percentage deviation by project | 3 | 2 |
-| 24 | High | US38 — View project financial health | 3 | 2 |
-| 25 | High | US40 — Import data through CSV files | 1 | 2 |
-| 26 | Low | US01 — Authenticate into the system | 2 | 3 |
-| 27 | Low | US02 — Access features according to user profile | 2 | 3 |
-| 28 | Low | US03 — Manage system users | 3 | 3 |
-| 29 | Low | US25 — View labor cost by employee or role | 3 | 3 |
-| 30 | Low | US26 — View labor evolution over time | 3 | 3 |
-| 31 | Low | US28 — Export analytical data to CSV | 2 | 3 |
-| 32 | Low | US29 — Export analytical data to Excel | 2 | 3 |
-| 33 | Low | US30 — View the origin of consolidated data | 3 | 3 |
-| 34 | Low | US31 — Identify data update or integration failures | 3 | 3 |
-| 35 | Low | US33 — View data load history | 3 | 3 |
-| 36 | Low | US34 — View detailed load failures | 3 | 3 |
-| 37 | Low | US35 — View access audit trail | 3 | 3 |
-| 38 | Medium | US20 — View material consumption over time | 3 | 3 |
-| 39 | Medium | US24 — View labor hours by project | 3 | 3 |
-| 40 | Medium | US39 — View projected budget overrun | 2 | 3 |
+## Delivery Schedule
 
-<span id="schedule"></span>
+| Phase | Start | Delivery | Documentation |
+|---|---|---|---|
+| General kick-off | 2026-03-02 | 2026-03-06 | - |
+| Planning and initial backlog | 2026-03-09 | 2026-03-13 | - |
+| Sprint 1 | 2026-03-16 | 2026-04-05 | [Sprint 1](docs/sprints/sprint-1.md) |
+| Sprint Review / Planning | 2026-04-06 | 2026-04-10 | - |
+| Sprint 2 | 2026-04-13 | 2026-05-03 | [Sprint 2](docs/sprints/sprint-2.md) |
+| Sprint Review / Planning | 2026-05-04 | 2026-05-08 | - |
+| Sprint 3 | 2026-05-11 | 2026-05-31 | [Sprint 3](docs/sprints/sprint-3.md) |
+| Sprint Review / Planning | 2026-06-01 | 2026-06-05 | - |
+| Solutions Fair | 2026-06-11 | 2026-06-11 | - |
 
-## Delivery Schedule 🗓️
+## Documentation
 
-Phase | Start | Delivery
---- | --- | ---
-General kick-off | 2026-03-02 | 2026-03-06
-Planning and initial backlog | 2026-03-09 | 2026-03-13
-Sprint 1 | 2026-03-16 | 2026-04-05
-Sprint Review / Planning | 2026-04-06 | 2026-04-10
-Sprint 2 | 2026-04-13 | 2026-05-03
-Sprint Review / Planning | 2026-05-04 | 2026-05-08
-Sprint 3 | 2026-05-11 | 2026-05-31
-Sprint Review / Planning | 2026-06-01 | 2026-06-05
-Solutions Fair | 2026-06-11 | 2026-06-11
+### Database
+- [Database Model](docs/database/README.md)
 
-<span id="sprint-summary"></span>
+### Sprints
+- [Sprint 1](docs/sprints/sprint-1.md)
+- [Sprint 2](docs/sprints/sprint-2.md)
+- [Sprint 3](docs/sprints/sprint-3.md)
 
-## Sprint Summary 📋
-
-<details>
-<summary>Kick-off</summary>
-
-**Project:** SCARS — Sovereign Resource Control and Autonomy System.
-
-**Partner:** SIATT.
-
-**Challenge**
-
-Data related to materials, purchasing, inventory, project activities, and technical labor are currently fragmented across different sources, which makes consolidated historical analysis difficult.
-
-The absence of a structured analytical environment reduces visibility into the real cost of strategic projects and programs, increases manual effort, and raises the risk of inconsistencies.
-
-**Project Goal**
-
-Design and implement a Data Warehouse capable of consolidating strategic cost data and supporting analytical exploration by time, program, project, material, employee, and financial indicators.
-
-**Initial Engineering Standards and Technologies**
-
-- PostgreSQL as the main database;
-- Star and snowflake dimensional modeling;
-- Python and Django for backend services and data processing;
-- Vue.js with TypeScript for frontend development;
-- ETL/ELT strategy with staging area;
-- Automated testing, GitHub Actions CI, and static code analysis.
-
-</details>
-
-<details>
-<summary>Sprint 1</summary>
-
-**Period:** 2026-03-16 to 2026-04-05.
-
-**Sprint Goal:** Deliver the solution foundation and the first version of the analytical dashboard for stakeholder validation.
-
-**Planned User Stories**
-- US04 — View the main dashboard base structure
-- US05 — View the main dashboard indicators
-- US06 — Filter dashboard by period
-- US07 — Filter dashboard by program and project
-- US08 — View consolidated total cost
-- US09 — View total cost by program
-- US10 — View total cost by project
-- US11 — View cost evolution over time
-- US16 — View the base structure of the materials analysis screen
-- US17 — View indicators and table for materials analysis
-
-**Completed Deliveries**
-- _To be filled at the end of the sprint._
-
-**Challenges and Obstacles**
-- _To be filled at the end of the sprint._
-
-**Lessons Learned**
-- _To be filled at the end of the sprint._
-
-**Evidence**
-- _Add screenshots, links, or images at the end of the sprint._
-
-![Sprint 1 Evidence](docs/evidence/sprint-1/screenshot-1.png)
-
-</details>
-
-<details>
-<summary>Sprint 2</summary>
-
-**Period:** 2026-04-13 to 2026-05-03.
-
-**Sprint Goal:** Expand the analytical environment with specialized views, financial monitoring, and CSV-based ingestion.
-
-**Planned User Stories**
-- US12 — View cost composition between materials and labor hours
-- US13 — View materials with highest financial impact
-- US14 — View projects with highest cost
-- US15 — View dashboard summary table
-- US27 — View consolidated cost screen
-- US18 — Filter materials analysis by item, supplier, and category
-- US19 — View material cost by project
-- US21 — View the base structure of the technical labor screen
-- US22 — View indicators and table for technical labor analysis
-- US23 — Filter labor analysis by employee, role, and task
-- US32 — View the last data refresh timestamp
-- US36 — View budget by program and project
-- US37 — View percentage deviation by project
-- US38 — View project financial health
-- US40 — Import data through CSV files
-
-**Completed Deliveries**
-- _To be filled at the end of the sprint._
-
-**Challenges and Obstacles**
-- _To be filled at the end of the sprint._
-
-**Lessons Learned**
-- _To be filled at the end of the sprint._
-
-**Evidence**
-- _Add screenshots, links, or images at the end of the sprint._
-
-![Sprint 2 Evidence](docs/evidence/sprint-2/screenshot-1.png)
-
-</details>
-
-<details>
-<summary>Sprint 3</summary>
-
-**Period:** 2026-05-11 to 2026-05-31.
-
-**Sprint Goal:** Complete governance, export, traceability, and remaining analytical features.
-
-**Planned User Stories**
-- US01 — Authenticate into the system
-- US02 — Access features according to user profile
-- US03 — Manage system users
-- US25 — View labor cost by employee or role
-- US26 — View labor evolution over time
-- US28 — Export analytical data to CSV
-- US29 — Export analytical data to Excel
-- US30 — View the origin of consolidated data
-- US31 — Identify data update or integration failures
-- US33 — View data load history
-- US34 — View detailed load failures
-- US35 — View access audit trail
-- US20 — View material consumption over time
-- US24 — View labor hours by project
-- US39 — View projected budget overrun
-
-**Completed Deliveries**
-- _To be filled at the end of the sprint._
-
-**Challenges and Obstacles**
-- _To be filled at the end of the sprint._
-
-**Lessons Learned**
-- _To be filled at the end of the sprint._
-
-**Evidence**
-- _Add screenshots, links, or images at the end of the sprint._
-
-![Sprint 3 Evidence](docs/evidence/sprint-3/screenshot-1.png)
-
-</details>
-
-<span id="burndown"></span>
-
-## Burndown 🔥
-
-![Sprint 1 Burndown](docs/burndown/sprint-1.png)
-![Sprint 2 Burndown](docs/burndown/sprint-2.png)
-![Sprint 3 Burndown](docs/burndown/sprint-3.png)
-
-<span id="quality-reports"></span>
-
-## SonarCloud / Quality Reports 📑
-
-![Sprint 1 SonarCloud](docs/tests/sonarcloud/sprint-1.png)
-![Sprint 2 SonarCloud](docs/tests/sonarcloud/sprint-2.png)
-![Sprint 3 SonarCloud](docs/tests/sonarcloud/sprint-3.png)
-
-<span id="documentation"></span>
-
-## Documentation 📁
-
-- [Product Backlog](docs/backlog/product-backlog.md)
-- [Sprint 1 Backlog](docs/backlog/sprint-1-backlog.md)
-- [Sprint 2 Backlog](docs/backlog/sprint-2-backlog.md)
-- [Sprint 3 Backlog](docs/backlog/sprint-3-backlog.md)
+### Technical and Process
 - [Installation Guide](docs/manuals/installation-guide.md)
 - [User Guide](docs/manuals/user-guide.md)
 - [Version Control and Branching Strategy](docs/process/branch-strategy.md)
 - [Continuous Integration Strategy](docs/process/continuous-integration-strategy.md)
 - [Commit Standard](docs/process/commit-standard.md)
 
-<span id="dor-dod"></span>
-
 ## Definition of Ready (DoR) and Definition of Done (DoD)
 
 In order to standardize the team's workflow, general criteria were established to define when a task is ready to enter the backlog, ready for development, and considered completed.
+
+These are the **broad project-level criteria**.  
+Specific user-story-level DoR and DoD should be documented in each sprint file.
 
 ### Definition of Ready (Backlog)
 A task is considered ready to enter the backlog when:
@@ -393,15 +192,26 @@ A task is considered done when:
 - the merge has been completed and the feature has been tested in the testing/homologation branch;
 - there are no critical errors, known failures, or inconsistent behaviors.
 
-<span id="tech-stack"></span>
-
-## 💻 Tech Stack
+## Tech Stack
 
 <p align="center">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=python,django,postgres,vue,ts,docker,git,github,githubactions,figma,vscode&theme=light" />
   </a>
 </p>
+
+## Contributors
+
+Name | Role | Networking | Profile
+--- | --- | --- | ---
+Alexander Silva | Dev Team | <a href="https://github.com/alexttz"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/alexander-silva-lima-96a0432a6"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/alexttz.png" width="60"> |
+Carlos Daniel | Scrum Master | <a href="https://github.com/darloscaniel"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/carlos-daniel-9516952b4"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/darloscaniel.png" width="60"> |
+Felipe Reis | Dev Team | <a href="https://github.com/felpzreiz"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/felipe-reiss/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/felpzreiz.png" width="60"> |
+Isabelly Sousa | Dev Team | <a href="https://github.com/61isabelly"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/isabelly-sousa"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/61isabelly.png" width="60"> |
+Luiz Henrique | Product Owner | <a href="https://github.com/LuizHRFerreira"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/luiz-henrique-rabello-ferreira-3600752ba"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/LuizHRFerreira.png" width="60"> |
+Mariana Oliveira | Dev Team | <a href="https://github.com/mariinetic"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/oliveirasmari/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/mariinetic.png" width="60"> |
+Rafaella Cruz | Dev Team | <a href="https://github.com/arafaellacruz"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/rafaella-cruz"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/arafaellacruz.png" width="60"> |
+Samuel Prado | Dev Team | <a href="https://github.com/Samuelprado99"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/samuel-prado-9142381b6"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/Samuelprado99.png" width="60"> |
 
 <div align="center">
 <img src="assets/footer.png" alt="footer" width="100%" />
