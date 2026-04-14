@@ -31,9 +31,8 @@ The purpose of this model is to support multidimensional analysis of:
 
 ## Model Diagram
 
-> Add the model image below when available.
-
 ![Database Model](../../assets/logical-model-overview.png)
+[View on dbdiagram](https://dbdiagram.io/d/SCAR_DB-69de6cf28089629684970b1b)
 
 ---
 
