@@ -141,7 +141,7 @@ The solution is expected to answer questions such as:
 | Sprint Review / Planning | 2026-04-06 | 2026-04-10 | - |
 | Sprint 2 | 2026-04-13 | 2026-05-03 | [Sprint 2](docs/sprints/sprint-2.md) |
 | Sprint Review / Planning | 2026-05-04 | 2026-05-08 | - |
-| Sprint 3 | 2026-05-11 | 2026-05-31 | [Sprint 3](docs/sprints/sprint-3.md) |
+| Sprint 3 | 2026-05-11 | 2026-05-31 | -
 | Sprint Review / Planning | 2026-06-01 | 2026-06-05 | - |
 | Solutions Fair | 2026-06-11 | 2026-06-11 | - |
 
@@ -153,11 +153,11 @@ The solution is expected to answer questions such as:
 ### Sprints
 - [Sprint 1](docs/sprints/sprint-1.md)
 - [Sprint 2](docs/sprints/sprint-2.md)
-- [Sprint 3](docs/sprints/sprint-3.md)
+<!--- [Sprint 3](docs/sprints/sprint-3.md)-->
 
 ### Technical and Process
-- [Installation Guide](docs/manuals/installation-guide.md)
-- [User Guide](docs/manuals/user-guide.md)
+<!--- [Installation Guide](docs/manuals/installation-guide.md)
+- [User Guide](docs/manuals/user-guide.md)-->
 - [Version Control and Branching Strategy](docs/process/branch-strategy.md)
 - [Continuous Integration Strategy](docs/process/continuous-integration-strategy.md)
 - [Commit Standard](docs/process/commit-standard.md)
@@ -204,7 +204,7 @@ A task is considered done when:
 
 Name | Role | Networking | Profile
 --- | --- | --- | ---
-Alexander Silva | Dev Team | <a href="https://github.com/alexttz"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/alexander-silva-lima-96a0432a6"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/alexttz.png" width="60"> |
+Alexander Silva | Dev Team | <a href="https://github.com/ahlesk"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/alexander-silva-lima-96a0432a6"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/ahlesk.png" width="60"> |
 Carlos Daniel | Scrum Master | <a href="https://github.com/darloscaniel"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/carlos-daniel-9516952b4"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/darloscaniel.png" width="60"> |
 Felipe Reis | Dev Team | <a href="https://github.com/felpzreiz"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/felipe-reiss/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/felpzreiz.png" width="60"> |
 Isabelly Sousa | Dev Team | <a href="https://github.com/61isabelly"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a> <a href="https://www.linkedin.com/in/isabelly-sousa"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> | <img src="https://github.com/61isabelly.png" width="60"> |
