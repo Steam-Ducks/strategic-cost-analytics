@@ -137,9 +137,9 @@ The solution is expected to answer questions such as:
 |---|---|---|---|
 | General kick-off | 2026-03-02 | 2026-03-06 | - |
 | Planning and initial backlog | 2026-03-09 | 2026-03-13 | - |
-| Sprint 1 | 2026-03-16 | 2026-04-05 | [Sprint 1](docs/sprints/sprint-1.md) |
+| Sprint 1 | 2026-03-16 | 2026-04-05 | [Sprint 1](docs/backlog/sprint-1-backlog.md) |
 | Sprint Review / Planning | 2026-04-06 | 2026-04-10 | - |
-| Sprint 2 | 2026-04-13 | 2026-05-03 | [Sprint 2](docs/sprints/sprint-2.md) |
+| Sprint 2 | 2026-04-13 | 2026-05-03 | [Sprint 2](docs/backlog/sprint-2-backlog.md) |
 | Sprint Review / Planning | 2026-05-04 | 2026-05-08 | - |
 | Sprint 3 | 2026-05-11 | 2026-05-31 | -
 | Sprint Review / Planning | 2026-06-01 | 2026-06-05 | - |
@@ -151,9 +151,9 @@ The solution is expected to answer questions such as:
 - [Database Model](docs/database/README.md)
 
 ### Sprints
-- [Sprint 1](docs/sprints/sprint-1.md)
-- [Sprint 2](docs/sprints/sprint-2.md)
-<!--- [Sprint 3](docs/sprints/sprint-3.md)-->
+- [Sprint 1](docs/backlog/sprint-1-backlog.md)
+- [Sprint 2](docs/backlog/sprint-2-backlog.md)
+<!--- [Sprint 3](docs/backlog/sprint-3-backlog.md)-->
 
 ### Technical and Process
 <!--- [Installation Guide](docs/manuals/installation-guide.md)
