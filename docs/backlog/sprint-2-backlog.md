@@ -343,32 +343,6 @@ The system must classify projects according to the defined financial health rule
 
 ---
 
-### US40 — CSV Data Import
-
-**User Story**  
-As an analytical system, I want to receive data through CSV files provided by the client so that the initial load and data preparation can be performed without depending on API integration.
-
-**Description**  
-The system must support ingestion of the CSV files provided by the client as the official source of data in the current scope. The import must include minimum structural validation, staging load, and availability for analytical transformation.
-
-**Definition of Ready (DoR)**
-- List of CSV files is defined  
-- Expected minimum structure of each file is known  
-- Structural validation rules are defined  
-- Staging load strategy is defined  
-
-**Definition of Done (DoD)**
-- CSV import process is implemented  
-- Structural validations are implemented  
-- Staging load is working correctly  
-- Imported data is available for transformation  
-- Tests are approved  
-
-**Tasks**
-- Define CSV input data flow provided by the client  
-
----
-
 ## Sprint User Stories Summary
 
 | ID | User Story | Points | Status |
@@ -387,7 +361,6 @@ The system must support ingestion of the CSV files provided by the client as the
 | US36 | Budget by program and project | 6 | Done |
 | US37 | Percentage deviation of projects | 6 | Done |
 | US38 | Financial health status of projects | 7 | Done |
-| US40 | CSV data import | 0 | Done |
 
 **Total planned points:** 80
 
@@ -403,9 +376,10 @@ The system must support ingestion of the CSV files provided by the client as the
 ![Burndown](../../assets/sprint-2/burndown.png)
 
 #### SonarQube
-backend
+**backend**
 ![SonarQube](../../assets/sprint-2/sonar-backend.jpg)
-Frontend
+
+**Frontend**
 ![SonarQube](../../assets/sprint-2/sonar-frontend.jpg)
 
 ### Presentation
