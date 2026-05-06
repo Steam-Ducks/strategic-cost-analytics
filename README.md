@@ -141,7 +141,7 @@ The solution is expected to answer questions such as:
 | Sprint Review / Planning | 2026-04-06 | 2026-04-10 | - |
 | Sprint 2 | 2026-04-13 | 2026-05-03 | [Sprint 2](docs/backlog/sprint-2-backlog.md) |
 | Sprint Review / Planning | 2026-05-04 | 2026-05-08 | - |
-| Sprint 3 | 2026-05-11 | 2026-05-31 | -
+| Sprint 3 | 2026-05-11 | 2026-05-31 | - |
 | Sprint Review / Planning | 2026-06-01 | 2026-06-05 | - |
 | Solutions Fair | 2026-06-11 | 2026-06-11 | - |
 
@@ -153,7 +153,7 @@ The solution is expected to answer questions such as:
 ### Sprints
 - [Sprint 1](docs/backlog/sprint-1-backlog.md)
 - [Sprint 2](docs/backlog/sprint-2-backlog.md)
-<!--- [Sprint 3](docs/backlog/sprint-3-backlog.md)-->
+- [Sprint 3](docs/backlog/sprint-3-backlog.md)
 
 ### Technical and Process
 <!--- [Installation Guide](docs/manuals/installation-guide.md)

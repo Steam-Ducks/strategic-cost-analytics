@@ -373,21 +373,21 @@ The system must support ingestion of the CSV files provided by the client as the
 
 | ID | User Story | Points | Status |
 |----|------------|--------|--------|
-| US12 | Cost composition between materials and technical hours | 6 | To Do |
-| US13 | Materials with the highest financial impact | 6 | To Do |
-| US14 | Projects with the highest cost | 6 | To Do |
-| US15 | Summary table in the dashboard | 8 | To Do |
-| US18 | Filter material analysis by item, supplier, and category | 9 | To Do |
-| US19 | Material cost by project | 6 | To Do |
-| US21 | Base structure of the technical hours screen | 3 | To Do |
-| US22 | Indicators and table in the technical hours analysis screen | 4 | To Do |
-| US23 | Filter technical hours analysis by employee, role, and task | 9 | To Do |
-| US27 | Consolidated cost screen | 3 | To Do |
-| US32 | Latest data update | 1 | To Do |
-| US36 | Budget by program and project | 6 | To Do |
-| US37 | Percentage deviation of projects | 6 | To Do |
-| US38 | Financial health status of projects | 7 | To Do |
-| US40 | CSV data import | 0 | To Do |
+| US12 | Cost composition between materials and technical hours | 6 | Done |
+| US13 | Materials with the highest financial impact | 6 | Done |
+| US14 | Projects with the highest cost | 6 | Done |
+| US15 | Summary table in the dashboard | 8 | Done |
+| US18 | Filter material analysis by item, supplier, and category | 9 | Done |
+| US19 | Material cost by project | 6 | Done |
+| US21 | Base structure of the technical hours screen | 3 | Done |
+| US22 | Indicators and table in the technical hours analysis screen | 4 | Done |
+| US23 | Filter technical hours analysis by employee, role, and task | 9 | Done |
+| US27 | Consolidated cost screen | 3 | Done |
+| US32 | Latest data update | 1 | Done |
+| US36 | Budget by program and project | 6 | Done |
+| US37 | Percentage deviation of projects | 6 | Done |
+| US38 | Financial health status of projects | 7 | Done |
+| US40 | CSV data import | 0 | Done |
 
 **Total planned points:** 80
 
@@ -398,18 +398,21 @@ The system must support ingestion of the CSV files provided by the client as the
 ### Wireframes
 - [Dashboard Wireframe](https://www.figma.com/make/v1S1QcC1TETZXjW7fsROmZ/Minimalist-Dashboard?p=f&t=rTUNyg9AzobuhCrQ-0&fullscreen=1&preview-route=%2Fdashboard)
 
-### Screenshots
-- Add screenshots from `../../assets/sprint-2/`
-
 ### Quality and Monitoring
-- Add burndown from `../../assets/sprint-2/`
-- Add SonarQube evidence from `../../assets/sprint-2/`
+#### Burndown
+![Burndown](../../assets/sprint-2/burndown.png)
+
+#### SonarQube
+backend
+![SonarQube](../../assets/sprint-2/sonar-backend.jpg)
+Frontend
+![SonarQube](../../assets/sprint-2/sonar-frontend.jpg)
 
 ### Presentation
-- 
+- [Sprint 2 Presentation](../../assets/sprint-2/sprint-presentation-2.pdf)
 
 ### Demo Video
-- 
+- [Assistir Demo - Sprint 2](https://youtu.be/tK6LrtMTIPs)
 
 ---
 
@@ -417,9 +420,8 @@ The system must support ingestion of the CSV files provided by the client as the
 
 - Planned User Stories: 15  
 - Planned Story Points: 80  
-- Sprint source aligned with Jira tasks exported for Sprint 2  
 
 ---
 
 ## Sprint Status
-**In Progress**
+**Completed**
