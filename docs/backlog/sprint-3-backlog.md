@@ -1,487 +1,634 @@
-# Sprint 3
+# Sprint 3 Backlog
 
 ## Sprint
-
 **Sprint 3**  
 **Period:** 05/11/2026 to 05/31/2026
 
 ---
 
 ## Sprint Goal
-
-Complete the solution with authentication, access control, export, traceability, and audit features, while expanding the analytical views for technical hours, material consumption over time, and projected budget overrun.
+Complete the SCAR solution with authentication, access control, export, traceability, audit features, CSV import improvements, and advanced analytical views for technical hours, material consumption, and financial monitoring.
 
 ---
 
 ## Sprint Objective
-
-Deliver the final version of the solution with user authentication and administration mechanisms, data export resources, traceability and audit features, and additional analytical views for technical hours, material consumption over time, and projected budget overrun.
-
----
-
-## Demonstration Video
-
-- Add Sprint 3 demo video link here
+Deliver the final analytical and operational features of the SCAR platform, including secure authentication, role-based access control, export resources, audit and traceability capabilities, financial monitoring enhancements, and advanced analytical visualizations.
 
 ---
 
-## User Stories
+# Sprint User Stories
 
-### US01 — As a user, I want to authenticate in the system, so that I can access the analytical environment securely.
+## US01 — Authenticate in the system
 
-#### Description
-The system must allow user authentication through login and password, granting access according to the application rules.
+**User Story**  
+As a user, I want to authenticate in the system so that I can access the analytical environment securely.
 
-#### Acceptance Criteria
-- Display the login screen
-- Validate username and password
-- Allow access when credentials are valid
-- Display an appropriate error message when authentication fails
+### Description
+The system must allow authentication using username and password and grant access according to the authenticated user.
 
-#### Definition of Ready
-- authentication rules are defined
-- login flow is mapped
+### Definition of Ready (DoR)
+- Authentication rules are defined
+- Login flow is mapped
 
-#### Definition of Done
-- authentication is implemented
-- access works correctly
-- tests are approved
+### Definition of Done (DoD)
+- Authentication is implemented
+- Access works correctly
+- Tests are approved
 
-#### Tasks
-| Task | Owner | Status |
-|---|---|---|
-| Add tasks here |  | To Do |
-
----
-
-### US02 — As an authenticated user, I want to access features according to my user type, so that I can use the application with the appropriate level of access.
-
-#### Description
-The system must support different user types and apply the corresponding access restrictions to the available features.
-
-#### Acceptance Criteria
-- Identify the user type during authentication
-- Allow normal access according to user type
-- Restrict exclusive features when applicable
-- Prevent unauthorized direct access
-- Display consistent behavior for unauthorized attempts
-
-#### Definition of Ready
-- user types are defined
-- access rules are defined
-
-#### Definition of Done
-- access restrictions are implemented
-- behavior is validated
-- tests are approved
-
-#### Tasks
-| Task | Owner | Status |
-|---|---|---|
-| Add tasks here |  | To Do |
+### Tasks
+- Implement login endpoint
+- Implement authentication validation rules
+- Generate authentication token after valid login
+- Protect private routes and endpoints
+- Create login screen
+- Implement login form validations
+- Integrate login screen with authentication API
+- Implement session persistence
+- Implement front-end route protection
+- Implement visual feedback for authentication errors
 
 ---
 
-### US03 — As an administrator, I want to manage system users, so that I can keep application access updated and centrally controlled.
+## US02 — Access functionalities according to user profile
 
-#### Description
-The system must provide an administrative screen to list, create, edit, and delete users, accessible only to administrators.
+**User Story**  
+As an authenticated user, I want to access functionalities according to my user type so that I can use the application with the correct permission level.
 
-#### Acceptance Criteria
-- Display access to user management only for administrators
-- Prevent access by unauthorized users
-- Display user listing
-- Allow creating a new user
-- Allow editing an existing user
-- Allow deleting an existing user
-- Prevent duplicate login creation
-- Display success and validation messages appropriately
+### Description
+The system must support role-based access control using predefined user profiles.
 
-#### Definition of Ready
-- required user fields are defined
-- administrator-only rule is defined
-- uniqueness rule is defined
+### Definition of Ready (DoR)
+- User profiles are defined
+- Access rules are defined
 
-#### Definition of Done
-- user management is implemented
-- access restriction is implemented
-- listing is updated after operations
-- tests are approved
+### Definition of Done (DoD)
+- Access restrictions are implemented
+- Permissions are validated
+- Tests are approved
 
-#### Tasks
-| Task | Owner | Status |
-|---|---|---|
-| Add tasks here |  | To Do |
+### Tasks
+- Define user profiles in the system
+- Implement authorization rules by profile
+- Protect restricted endpoints
+- Restrict access to sensitive information
+- Validate unauthorized access attempts
+- Implement profile validation in front-end navigation
 
 ---
 
-### US20 — As an analyst, I want to view material consumption over time, so that I can identify increases, reductions, and seasonality in material usage.
+## US20 — View material consumption over time
 
-#### Description
-The system must display the temporal evolution of material consumption and/or material cost by period.
+**User Story**  
+As an analyst, I want to view material consumption over time so that I can identify increases, reductions, and seasonality in material usage.
 
-#### Acceptance Criteria
-- Display time series for material consumption or cost
-- Allow analysis by period
-- Respect applied filters
-- Display periods in correct order
-- Update the visualization according to the selected context
+### Description
+The system must display the temporal evolution of material consumption and material costs by period.
 
-#### Definition of Ready
-- temporal granularity is defined
-- material cost/consumption rule is defined
-- historical data is available
+### Definition of Ready (DoR)
+- Temporal granularity is defined
+- Material consumption rules are defined
+- Historical data is available
 
-#### Definition of Done
-- temporal visualization is implemented
-- aggregations are correct
-- tests are approved
+### Definition of Done (DoD)
+- Temporal visualization is implemented
+- Aggregations are correct
+- Tests are approved
 
-#### Tasks
-| Task | Owner | Status |
-|---|---|---|
-| Add tasks here |  | To Do |
-
----
-
-### US24 — As a manager, I want to view hours by project, so that I can identify where the greatest technical effort is allocated.
-
-#### Description
-The system must display a comparative visualization of the total worked hours by project.
-
-#### Acceptance Criteria
-- Display hours by project
-- Respect applied filters
-- Allow visual comparison between projects
-- Display total hours correctly
-
-#### Definition of Ready
-- aggregation by project is defined
-- hours data by project is available
-
-#### Definition of Done
-- visualization is implemented
-- calculations are correct
-- tests are approved
-
-#### Tasks
-| Task | Owner | Status |
-|---|---|---|
-| Add tasks here |  | To Do |
+### Tasks
+- Create queries for material consumption evolution
+- Create endpoint for material consumption evolution
+- Implement filters for material temporal analysis
+- Implement aggregation logic for temporal analysis
+- Implement error handling for material consumption requests
+- Create material consumption evolution section in materials dashboard
+- Integrate temporal visualization with backend endpoint
+- Create material consumption evolution chart component
+- Integrate filters with temporal material analysis
+- Implement loading, empty, and error states
 
 ---
 
-### US25 — As a manager, I want to view hourly cost by employee or role, so that I can analyze where labor cost is concentrated.
+## US24 — View hours by project
 
-#### Description
-The system must display a comparative visualization of accumulated labor cost by employee or role.
+**User Story**  
+As a manager, I want to view hours by project so that I can identify where the greatest technical effort is allocated.
 
-#### Acceptance Criteria
-- Display cost by employee or role
-- Allow switching between employee and role when applicable
-- Respect applied filters
-- Display total values correctly
+### Description
+The system must display a comparative visualization of total worked hours grouped by project.
 
-#### Definition of Ready
-- aggregation rule is defined
-- employee and role data are available
+### Definition of Ready (DoR)
+- Aggregation by project is defined
+- Hours data is available
 
-#### Definition of Done
-- visualization is implemented
-- calculations are correct
-- tests are approved
+### Definition of Done (DoD)
+- Visualization is implemented
+- Calculations are correct
+- Tests are approved
 
-#### Tasks
-| Task | Owner | Status |
-|---|---|---|
-| Add tasks here |  | To Do |
-
----
-
-### US26 — As an analyst, I want to view the time evolution of hours, so that I can analyze the pace of execution over time.
-
-#### Description
-The system must display a time series with the sum of worked hours by period.
-
-#### Acceptance Criteria
-- Display hours evolution over time
-- Respect applied filters
-- Display periods in the correct order
-- Display aggregated values correctly
-
-#### Definition of Ready
-- temporal granularity is defined
-- historical hours data is available
-
-#### Definition of Done
-- temporal visualization is implemented
-- aggregations are correct
-- tests are approved
-
-#### Tasks
-| Task | Owner | Status |
-|---|---|---|
-| Add tasks here |  | To Do |
+### Tasks
+- Create queries for technical hours by project
+- Create endpoint for technical hours by project
+- Implement filters for technical hours analysis
+- Implement aggregation logic for project analysis
+- Implement error handling for technical hours requests
+- Create technical hours by project section in dashboard
+- Integrate technical hours visualization with backend endpoint
+- Create comparative technical hours chart by project
+- Integrate filters in technical hours visualization
+- Implement loading, empty, and error states
 
 ---
 
-### US28 — As a user, I want to export analytical data to CSV, so that I can perform complementary analysis outside the system.
+## US25 — View technical hours cost by collaborator
 
-#### Description
-The system must allow export of visible analytical data to CSV, respecting active filters and selected columns when applicable.
+**User Story**  
+As a manager, I want to view technical hours cost by collaborator so that I can analyze where labor cost is concentrated.
 
-#### Acceptance Criteria
-- Allow CSV export
-- Respect applied filters
-- Respect selected columns when applicable
-- Generate a standardized file name
+### Description
+The system must display comparative visualization of accumulated technical hours cost grouped by collaborator.
 
-#### Definition of Ready
-- export rules are defined
-- data source is available
+### Definition of Ready (DoR)
+- Aggregation rules are defined
+- Collaborator data is available
 
-#### Definition of Done
+### Definition of Done (DoD)
+- Visualization is implemented
+- Calculations are correct
+- Tests are approved
+
+### Tasks
+- Create queries for technical hours cost by collaborator
+- Create endpoint for technical hours cost by collaborator
+- Implement filters in collaborator analysis endpoint
+- Implement aggregation logic for collaborator analysis
+- Implement error handling for collaborator requests
+- Create collaborator cost section in technical hours dashboard
+- Integrate collaborator visualization with backend endpoint
+- Create collaborator cost chart component
+- Integrate filters with collaborator visualization
+- Implement loading, empty, and error states
+- Implement sorting behavior for collaborator ranking
+
+---
+
+## US26 — View temporal evolution of technical hours
+
+**User Story**  
+As an analyst, I want to view the temporal evolution of technical hours so that I can analyze the execution pace over time.
+
+### Description
+The system must display the temporal evolution of technical hours and total hours cost by period.
+
+### Definition of Ready (DoR)
+- Temporal granularity is defined
+- Historical technical hours data is available
+
+### Definition of Done (DoD)
+- Temporal visualization is implemented
+- Aggregations are correct
+- Tests are approved
+
+### Tasks
+- Create queries for technical hours temporal evolution
+- Create endpoint for temporal evolution of technical hours
+- Implement filters for temporal hours analysis
+- Implement aggregation logic for temporal analysis
+- Implement error handling for temporal analysis requests
+- Create temporal evolution section in technical hours dashboard
+- Integrate temporal visualization with backend endpoint
+- Create technical hours temporal evolution chart component
+- Integrate filters with temporal analysis visualization
+- Implement loading, empty, and error states
+- Implement chronological ordering behavior
+
+---
+
+## US28 — Export analytical data to CSV
+
+**User Story**  
+As a user, I want to export analytical data to CSV so that I can perform external analysis.
+
+### Description
+The system must allow exporting analytical data in CSV format while respecting applied filters.
+
+### Definition of Ready (DoR)
+- Export rules are defined
+- Data source is available
+
+### Definition of Done (DoD)
 - CSV export is implemented
-- filters are preserved
-- tests are approved
+- Filters are preserved
+- Tests are approved
 
-#### Tasks
-| Task | Owner | Status |
-|---|---|---|
-| Add tasks here |  | To Do |
+### Tasks
+- Create CSV export structure for analytical data
+- Create endpoint for CSV export
+- Implement filters integration in CSV export endpoint
+- Implement analytical data selection for CSV export
+- Implement standardized file naming
+- Implement error handling for CSV export
+- Create CSV export action in analytical screens
+- Integrate export action with backend endpoint
+- Implement loading and feedback states for export
+- Implement export context validation
 
 ---
 
-### US29 — As a user, I want to export analytical data to Excel, so that I can share and manipulate results in a corporate format.
+## US29 — Export analytical data to Excel
 
-#### Description
-The system must allow export of analytical data to Excel, respecting active filters and selected columns when applicable.
+**User Story**  
+As a user, I want to export analytical data to Excel so that I can share and manipulate analytical information.
 
-#### Acceptance Criteria
-- Allow Excel export
-- Respect applied filters
-- Respect selected columns when applicable
-- Generate a standardized file name
+### Description
+The system must allow exporting analytical data in Excel format while respecting applied filters.
 
-#### Definition of Ready
-- export rules are defined
-- data source is available
+### Definition of Ready (DoR)
+- Export rules are defined
+- Data source is available
 
-#### Definition of Done
+### Definition of Done (DoD)
 - Excel export is implemented
-- filters are preserved
-- tests are approved
+- Filters are preserved
+- Tests are approved
 
-#### Tasks
-| Task | Owner | Status |
-|---|---|---|
-| Add tasks here |  | To Do |
-
----
-
-### US30 — As an administrator, I want to view the source of consolidated data, so that I can audit which source system and record originated the analytical values.
-
-#### Description
-The system must allow identification of the source of consolidated data, including source system, original identifier, and load timestamp.
-
-#### Acceptance Criteria
-- Display source system
-- Display original source record identifier when applicable
-- Display load date and time
-- Make traceability available for audit consultation
-
-#### Definition of Ready
-- traceability metadata are defined
-- source identifiers are known
-
-#### Definition of Done
-- traceability is implemented
-- consultation is available
-- tests are approved
-
-#### Tasks
-| Task | Owner | Status |
-|---|---|---|
-| Add tasks here |  | To Do |
+### Tasks
+- Create Excel export structure for analytical data
+- Create endpoint for Excel export
+- Implement filters integration in Excel export endpoint
+- Implement analytical data selection for Excel export
+- Implement Excel formatting structure
+- Implement standardized file naming
+- Implement error handling for Excel export
+- Create Excel export action in analytical screens
+- Integrate export action with backend endpoint
+- Implement loading and feedback states for export
+- Implement export context validation
 
 ---
 
-### US31 — As an administrator, I want to identify data update or integration failures, so that I can act quickly when analytical data becomes inconsistent.
+## US30 — View consolidated data traceability
 
-#### Description
-The system must signal relevant failures in data update or integration processes and allow their identification in the operational context.
+**User Story**  
+As an administrator, I want to trace consolidated analytical data so that I can audit the source system and original record.
 
-#### Acceptance Criteria
-- Display registered update or integration failures
-- Allow identification of the related execution status
-- Allow viewing minimum failure details
-- Preserve failure history
+### Description
+The system must allow identification of the source system, original record identifier, and load timestamp of analytical data.
 
-#### Definition of Ready
-- failure events are defined
-- execution logs are available
+### Definition of Ready (DoR)
+- Traceability metadata are defined
+- Source identifiers are available
 
-#### Definition of Done
-- failures are available for consultation
-- details are implemented
-- tests are approved
+### Definition of Done (DoD)
+- Traceability is implemented
+- Consultation is available
+- Tests are approved
 
-#### Tasks
-| Task | Owner | Status |
-|---|---|---|
-| Add tasks here |  | To Do |
-
----
-
-### US33 — As an administrator, I want to view data load history, so that I can monitor the reliability and freshness of the analytical environment.
-
-#### Description
-The system must present data load executions with period, status, and processed volume.
-
-#### Acceptance Criteria
-- Display execution history
-- Display execution status
-- Display processed volume
-- Allow filtering by period and status
-
-#### Definition of Ready
-- load logs are available
-- visualization structure is defined
-
-#### Definition of Done
-- history view is implemented
-- tests are approved
-
-#### Tasks
-| Task | Owner | Status |
-|---|---|---|
-| Add tasks here |  | To Do |
+### Tasks
+- Create queries for traceability metadata
+- Create endpoint for traceability data
+- Apply analytical filters to traceability queries
+- Implement error handling for traceability requests
+- Create traceability table in audit screen
+- Integrate traceability table with backend endpoint
+- Implement filters integration for traceability visualization
+- Implement loading, empty, and error states
 
 ---
 
-### US34 — As an administrator, I want to view details of load failures, so that I can diagnose update and import problems.
+## US31 — Identify integration and update failures
 
-#### Description
-The system must allow opening failed load executions and displaying useful information for diagnosis.
+**User Story**  
+As an administrator, I want to identify integration and update failures so that I can quickly react to analytical inconsistencies.
 
-#### Acceptance Criteria
-- Display failed executions
-- Allow opening execution details
-- Display error message or failure reason when available
-- Preserve execution history
+### Description
+The system must display operational failures related to imports and data integrations.
 
-#### Definition of Ready
-- failure logging is available
+### Definition of Ready (DoR)
+- Failure events are defined
+- Execution logs are available
 
-#### Definition of Done
-- detailed failure view is implemented
-- tests are approved
+### Definition of Done (DoD)
+- Failure monitoring is implemented
+- Failure details are available
+- Tests are approved
 
-#### Tasks
-| Task | Owner | Status |
-|---|---|---|
-| Add tasks here |  | To Do |
-
----
-
-### US35 — As an administrator, I want to view the access audit trail, so that I can track who used the application and when.
-
-#### Description
-The system must record and display relevant authentication and access events.
-
-#### Acceptance Criteria
-- Register relevant access events
-- Display the user associated with the event
-- Display event date and time
-- Allow consultation of the records
-
-#### Definition of Ready
-- audit events are defined
-- log structure is available
-
-#### Definition of Done
-- auditing is implemented
-- consultation is available
-- tests are approved
-
-#### Tasks
-| Task | Owner | Status |
-|---|---|---|
-| Add tasks here |  | To Do |
+### Tasks
+- Create FATO_EXECUCAO_CARGA table structure
+- Register execution logs during CSV imports
+- Create queries for integration failure monitoring
+- Create endpoint for integration failure monitoring
+- Implement filters in integration monitoring endpoint
+- Implement error handling for integration monitoring
+- Create integration failure view in audit screen
+- Integrate integration failure view with backend endpoint
+- Create integration failure table component
+- Integrate filters with failure monitoring
+- Implement loading, empty, and error states
+- Implement sorting behavior for execution records
 
 ---
 
-### US39 — As a manager, I want to view projected budget overrun, so that I can anticipate financial risks and prioritize corrective actions.
+## US33 — View data load history
 
-#### Description
-The system must calculate and display projected budget overrun for projects when applicable, based on the difference between actual consolidated cost and estimated budget.
+**User Story**  
+As an administrator, I want to view data load history so that I can monitor the freshness and reliability of the analytical environment.
 
-#### Acceptance Criteria
-- Display projected overrun by project when applicable
-- Respect applied filters
-- Display values correctly formatted
-- Allow analytical and/or tabular consultation
+### Description
+The system must display historical execution records including status, timestamps, and processed volume.
 
-#### Definition of Ready
-- overrun projection rule is defined
-- actual cost and budget data are available
+### Definition of Ready (DoR)
+- Execution logs are available
+- Visualization structure is defined
 
-#### Definition of Done
-- calculation is implemented
-- visualization is implemented
-- tests are approved
+### Definition of Done (DoD)
+- History visualization is implemented
+- Tests are approved
 
-#### Tasks
-| Task | Owner | Status |
-|---|---|---|
-| Add tasks here |  | To Do |
-
----
-
-## Sprint User Stories Summary
-
-| ID | Priority | Points | Status |
-|----|----------|--------|--------|
-| US01 | Low | 2 | Planned |
-| US02 | Low | 2 | Planned |
-| US03 | Low | 3 | Planned |
-| US20 | Medium | 3 | Planned |
-| US24 | Medium | 3 | Planned |
-| US25 | Low | 3 | Planned |
-| US26 | Low | 3 | Planned |
-| US28 | Low | 2 | Planned |
-| US29 | Low | 2 | Planned |
-| US30 | Low | 3 | Planned |
-| US31 | Low | 3 | Planned |
-| US33 | Low | 3 | Planned |
-| US34 | Low | 3 | Planned |
-| US35 | Low | 3 | Planned |
-| US39 | Medium | 2 | Planned |
-
-**Total planned points:** 40
+### Tasks
+- Create queries for execution history monitoring
+- Create endpoint for execution history monitoring
+- Implement filters in execution history endpoint
+- Implement error handling for execution history requests
+- Create execution history view in audit screen
+- Integrate execution history view with backend endpoint
+- Create execution history table component
+- Integrate filters with execution history visualization
+- Implement loading, empty, and error states
+- Implement sorting behavior for execution history
 
 ---
 
-## Evidence
+## US34 — View load failure details
 
-### Wireframes
-- [Dashboard Wireframe](https://www.figma.com/make/v1S1QcC1TETZXjW7fsROmZ/Minimalist-Dashboard?p=f&t=rTUNyg9AzobuhCrQ-0&fullscreen=1&preview-route=%2Fdashboard)
+**User Story**  
+As an administrator, I want to view load failure details so that I can diagnose data import problems.
 
-### Screenshots
-- Add screenshots from `../../assets/sprint-3/`
+### Description
+The system must allow detailed visualization of failed execution records.
 
-### Quality and Monitoring
-- Add burndown from `../../assets/sprint-3/`
-- Add SonarQube evidence from `../../assets/sprint-3/`
+### Definition of Ready (DoR)
+- Failure logging is available
 
-### Presentation
+### Definition of Done (DoD)
+- Detailed failure visualization is implemented
+- Tests are approved
+
+### Tasks
+- Create queries for execution failure details
+- Create endpoint for execution failure details
+- Implement filters for execution failure details
+- Implement error handling for failure detail requests
+- Create execution failure details view in audit screen
+- Integrate execution failure details view with backend endpoint
+- Create execution failure details table component
+- Integrate filters with failure details visualization
+- Implement loading, empty, and error states
+- Implement sorting behavior for failure details
+
+---
+
+## US35 — View access audit trail
+
+**User Story**  
+As an administrator, I want to view the access audit trail so that I can track authentication and access events.
+
+### Description
+The system must record and display authentication and access events.
+
+### Definition of Ready (DoR)
+- Audit events are defined
+- Logging structure is available
+
+### Definition of Done (DoD)
+- Audit trail is implemented
+- Consultation is available
+- Tests are approved
+
+### Tasks
+- Create access log registration structure
+- Register successful and failed authentication events
+- Create endpoint for audit trail consultation
+- Implement filters for audit trail consultation
+- Create audit trail visualization in audit screen
+- Integrate audit trail with backend endpoint
+- Implement loading, empty, and error states
+- Implement sorting behavior for access logs
+
+---
+
+## US39 — View projected budget overrun
+
+**User Story**  
+As a manager, I want to view projected budget overrun so that I can anticipate financial risks.
+
+### Description
+The system must calculate and display projected budget overrun based on the difference between actual cost and estimated budget.
+
+### Definition of Ready (DoR)
+- Projection rules are defined
+- Budget and actual cost data are available
+
+### Definition of Done (DoD)
+- Projection calculation is implemented
+- Visualization is implemented
+- Tests are approved
+
+### Tasks
+- Create queries for budget overrun projection analysis
+- Create endpoint for budget overrun projection analysis
+- Implement filters in projection endpoint
+- Implement projection aggregation logic
+- Implement error handling for projection requests
+- Create budget overrun projection section in financial screen
+- Integrate projection visualization with backend endpoint
+- Create budget overrun projection chart component
+- Integrate filters with projection visualization
+- Implement loading, empty, and error states
+- Implement sorting behavior for projected overruns
+
+---
+
+## US40 — Import data through CSV files
+
+**User Story**  
+As an analytical system, I want to import data through CSV files so that analytical tables can be updated manually.
+
+### Description
+The system must allow manual CSV uploads for dimensions and fact tables through the audit screen.
+
+### Definition of Ready (DoR)
+- Analytical tables are defined
+- CSV layout is defined
+- Validation rules are defined
+
+### Definition of Done (DoD)
+- CSV upload is implemented
+- Processing is functioning correctly
+- Execution logging is implemented
+- Tests are approved
+
+### Tasks
+- Create CSV import structure
+- Implement CSV parsing and normalization
+- Implement insertion into analytical tables
+- Implement execution logging during imports
+- Create endpoint for CSV imports
+- Implement error handling for CSV imports
+- Create CSV import view in audit screen
+- Create CSV upload components
+- Integrate import flow with backend endpoint
+- Display import execution results
+- Implement loading and error states
+- Refresh execution history after imports
+
+---
+
+## US41 — View financial health indicators
+
+**User Story**  
+As a manager, I want to view financial health indicators so that I can quickly understand the financial situation of projects.
+
+### Description
+The system must display financial health indicators based on budget, actual cost, deviation percentage, and project classification.
+
+### Definition of Ready (DoR)
+- Financial indicators are defined
+- Financial rules are defined
+- Data sources are available
+
+### Definition of Done (DoD)
+- Financial indicators are implemented
+- Calculations are validated
+- Tests are approved
+
+### Tasks
+- Create queries for financial health indicators
+- Create endpoint for financial health indicators
+- Implement filters in financial health indicators endpoint
+- Implement aggregation logic for financial indicators
+- Implement error handling for financial indicator requests
+- Create financial health indicators section
+- Integrate financial indicators with backend endpoint
+- Create financial indicator cards
+- Integrate filters with financial indicators
+- Implement loading, empty, and error states
+
+---
+
+## US42 — Filter budget and financial health analysis
+
+**User Story**  
+As an analyst, I want to filter budget and financial health analysis so that I can refine financial monitoring by analytical context.
+
+### Description
+The system must support filtering financial analysis by period, program, project, and financial health classification.
+
+### Definition of Ready (DoR)
+- Filter fields are defined
+- Filter rules are defined
+- Data sources are available
+
+### Definition of Done (DoD)
+- Financial filters are implemented
+- Integration with analytical components is working
+- Tests are approved
+
+### Tasks
+- Create queries for financial health filters
+- Create endpoint for financial health filters
+- Implement financial health filters logic
+- Integrate filters with financial analysis endpoints
+- Implement error handling for financial filters
+- Create financial health filters section
+- Create filter components for financial analysis
+- Integrate financial filters with backend endpoint
+- Integrate filters with analytical components
+- Implement filters state management
+- Implement loading, empty, and error states
+
+---
+
+## US43 — View financial summary table
+
+**User Story**  
+As a manager, I want to view a financial summary table so that I can compare budget, actual cost, financial health, and projected overrun.
+
+### Description
+The system must display a financial summary table with budget and financial health information grouped by program and project.
+
+### Definition of Ready (DoR)
+- Table columns are defined
+- Financial rules are defined
+- Data sources are available
+
+### Definition of Done (DoD)
+- Financial summary table is implemented
+- Filters and sorting are working correctly
+- Tests are approved
+
+### Tasks
+- Create queries for financial summary table
+- Create endpoint for financial summary table
+- Implement filters in financial summary table endpoint
+- Implement aggregation logic for financial summary table
+- Implement error handling for financial summary table requests
+- Create financial summary table section
+- Integrate financial summary table with backend endpoint
+- Create financial summary table component
+- Integrate filters with financial summary visualization
+- Implement sorting behavior for financial summary table
+- Implement loading, empty, and error states
+
+---
+
+# Sprint User Stories Summary
+
+| ID | User Story | Priority | Points | Status |
+|----|------------|----------|--------|--------|
+| US01 | Authenticate in the system | Low | 2 | Planned |
+| US02 | Access functionalities according to user profile | Low | 2 | Planned |
+| US20 | View material consumption over time | Medium | 3 | Planned |
+| US24 | View hours by project | Medium | 3 | Planned |
+| US25 | View technical hours cost by collaborator | Low | 3 | Planned |
+| US26 | View temporal evolution of technical hours | Low | 3 | Planned |
+| US28 | Export analytical data to CSV | Low | 2 | Planned |
+| US29 | Export analytical data to Excel | Low | 2 | Planned |
+| US30 | View consolidated data traceability | Low | 3 | Planned |
+| US31 | Identify integration and update failures | Low | 3 | Planned |
+| US33 | View data load history | Low | 3 | Planned |
+| US34 | View load failure details | Low | 3 | Planned |
+| US35 | View access audit trail | Low | 3 | Planned |
+| US39 | View projected budget overrun | Medium | 2 | Planned |
+| US40 | Import data through CSV files | High | 1 | Planned |
+| US41 | View financial health indicators | Medium | 2 | Planned |
+| US42 | Filter budget and financial health analysis | Medium | 2 | Planned |
+| US43 | View financial summary table | Medium | 2 | Planned |
+
+**Total planned points:** 44
+
+---
+
+<!--
+
+# Evidence
+
+## Wireframes
+- Dashboard Wireframe: https://www.figma.com/make/v1S1QcC1TETZXjW7fsROmZ/Minimalist-Dashboard?p=f&t=rTUNyg9AzobuhCrQ-0&fullscreen=1&preview-route=%2Fdashboard
+
+## Quality and Monitoring
+- Add burndown evidence in ../../assets/sprint-3/
+- Add SonarQube evidence in ../../assets/sprint-3/
+
+## Presentation
 - Add Sprint 3 presentation link here
 
-### Demo Video
+## Demo Video
 - Add Sprint 3 demo video link here
 
 ---
 
-## Sprint Status
+-->
 
-**In planning**
+# Sprint Status
+
+**In Progress**

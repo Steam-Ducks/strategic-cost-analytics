@@ -27,7 +27,6 @@ One of its most relevant initiatives is **MANSUP (National Surface Anti-Ship Mis
 > Historical and multidimensional analysis;  
 > Budget and financial health monitoring.
 
-
 ## Business Questions
 
 The solution is expected to answer questions such as:
@@ -57,7 +56,7 @@ The solution is expected to answer questions such as:
 | FR10 | Display summary tables in the dashboard and in consolidated analytical views. | US15, US27 |
 | FR11 | Display the technical labor analysis screen structure and its indicators. | US21, US22 |
 | FR12 | Filter labor analysis by employee, role, and task. | US23 |
-| FR13 | Display labor costs by project, employee, role, and over time. | US24, US25, US26 |
+| FR13 | Display labor costs by project, employee, collaborator, role, and over time. | US24, US25, US26 |
 | FR14 | Display the last data refresh timestamp. | US32 |
 | FR15 | Display budget by program and project. | US36 |
 | FR16 | Display percentage deviation between planned budget and actual cost. | US37 |
@@ -68,6 +67,9 @@ The solution is expected to answer questions such as:
 | FR21 | Display data lineage and source traceability for consolidated metrics. | US30 |
 | FR22 | Display integration/update failures and detailed load history. | US31, US33, US34 |
 | FR23 | Display audit trail related to system access and data operations. | US35 |
+| FR24 | Display financial health indicators and monitoring cards. | US41 |
+| FR25 | Filter financial analysis by period, project, program, and financial classification. | US42 |
+| FR26 | Display financial summary tables with budget, actual cost, and projected overrun. | US43 |
 
 ## Non-Functional Requirements
 
@@ -91,7 +93,7 @@ The solution is expected to answer questions such as:
 | ID | Epic | User Story | Priority | Points | Sprint |
 |----|------|------------|----------|--------|--------|
 | US01 | Access and Control | As a user, I want to authenticate in the system, so that I can access the analytical environment securely. | Low | 2 | 3 |
-| US02 | Access and Control | As an authenticated user, I want to access features according to my user type, so that I can use the application with the appropriate level of access. | Low | 2 | 3 |
+| US02 | Access and Control | As an authenticated user, I want to access functionalities according to my user profile, so that I can use the application with the correct permission level. | Low | 2 | 3 |
 | US03 | Access and Control | As an administrator, I want to manage system users, so that I can keep application access updated and centrally controlled. | Low | 3 | 3 |
 | US04 | Main Dashboard | As a manager, I want to view the base structure of the main dashboard, so that I can access the executive analytical view of the solution. | Highest | 2 | 1 |
 | US05 | Main Dashboard | As a manager, I want to view the main dashboard indicators, so that I can quickly understand the main consolidated metrics. | Highest | 3 | 1 |
@@ -114,22 +116,25 @@ The solution is expected to answer questions such as:
 | US22 | Technical Hours | As an analyst, I want to view indicators and a table in the technical hours analysis screen, so that I can monitor cost and effort by project. | Medium | 3 | 2 |
 | US23 | Technical Hours | As an analyst, I want to filter technical hours analysis by employee, role, and task, so that I can refine the investigation of technical effort from different perspectives. | Medium | 2 | 2 |
 | US24 | Technical Hours | As a manager, I want to view hours by project, so that I can identify where the greatest technical effort is allocated. | Medium | 3 | 3 |
-| US25 | Technical Hours | As a manager, I want to view hourly cost by employee or role, so that I can analyze where labor cost is concentrated. | Low | 3 | 3 |
-| US26 | Technical Hours | As an analyst, I want to view the time evolution of hours, so that I can analyze the pace of execution over time. | Low | 3 | 3 |
+| US25 | Technical Hours | As a manager, I want to view technical hours cost by collaborator, so that I can analyze where labor cost is concentrated. | Low | 3 | 3 |
+| US26 | Technical Hours | As an analyst, I want to view the temporal evolution of technical hours, so that I can analyze the execution pace over time. | Low | 3 | 3 |
 | US27 | Consolidated View | As a manager, I want to view a consolidated cost screen, so that I can compare materials and technical hours in a single view by project and program. | Medium | 5 | 2 |
-| US28 | Export | As a user, I want to export analytical data to CSV, so that I can perform complementary analysis outside the system. | Low | 2 | 3 |
-| US29 | Export | As a user, I want to export analytical data to Excel, so that I can share and manipulate results in a corporate format. | Low | 2 | 3 |
-| US30 | Data Traceability | As an administrator, I want to view the source of consolidated data, so that I can audit which source system and record originated the analytical values. | Low | 3 | 3 |
-| US31 | Data Traceability | As an administrator, I want to identify data update or integration failures, so that I can act quickly when analytical data becomes inconsistent. | Low | 3 | 3 |
+| US28 | Export | As a user, I want to export analytical data to CSV, so that I can perform external analysis. | Low | 2 | 3 |
+| US29 | Export | As a user, I want to export analytical data to Excel, so that I can share and manipulate analytical information. | Low | 2 | 3 |
+| US30 | Data Traceability | As an administrator, I want to trace consolidated analytical data, so that I can audit the source system and original record. | Low | 3 | 3 |
+| US31 | Audit and Monitoring | As an administrator, I want to identify integration and update failures, so that I can quickly react to analytical inconsistencies. | Low | 3 | 3 |
 | US32 | Data Traceability | As a user, I want to view the date of the latest data update, so that I know whether the information shown is up to date. | Medium | 1 | 2 |
-| US33 | Audit / Loads | As an administrator, I want to view data load history, so that I can monitor the reliability and freshness of the analytical environment. | Low | 3 | 3 |
-| US34 | Audit / Loads | As an administrator, I want to view details of load failures, so that I can diagnose update and import problems. | Low | 3 | 3 |
-| US35 | Audit / Loads | As an administrator, I want to view the access audit trail, so that I can track who used the application and when. | Low | 3 | 3 |
+| US33 | Audit and Monitoring | As an administrator, I want to view data load history, so that I can monitor the freshness and reliability of the analytical environment. | Low | 3 | 3 |
+| US34 | Audit and Monitoring | As an administrator, I want to view load failure details, so that I can diagnose data import problems. | Low | 3 | 3 |
+| US35 | Audit and Monitoring | As an administrator, I want to view the access audit trail, so that I can track authentication and access events. | Low | 3 | 3 |
 | US36 | Budget and Financial Health | As a manager, I want to view budget by program and project, so that I can compare planned values with actual costs. | High | 3 | 2 |
 | US37 | Budget and Financial Health | As a manager, I want to view the percentage deviation of projects, so that I can understand budget consumption relative to the estimated budget. | High | 3 | 2 |
 | US38 | Budget and Financial Health | As a manager, I want to view the financial health status of projects, so that I can identify which projects are healthy, under attention, or critical. | High | 3 | 2 |
-| US39 | Budget and Financial Health | As a manager, I want to view projected budget overrun, so that I can anticipate financial risks and prioritize corrective actions. | Medium | 2 | 3 |
-| US40 | Data Import | As an analytical system, I want to receive data through CSV files provided by the client, so that the initial load and data preparation can be performed without depending on API integration. | High | 1 | 2 |
+| US39 | Budget and Financial Health | As a manager, I want to view projected budget overrun, so that I can anticipate financial risks. | Medium | 2 | 3 |
+| US40 | Data Import | As an analytical system, I want to import data through CSV files so that analytical tables can be updated manually. | High | 1 | 3 |
+| US41 | Budget and Financial Health | As a manager, I want to view financial health indicators so that I can quickly understand the financial situation of projects. | Medium | 2 | 3 |
+| US42 | Budget and Financial Health | As an analyst, I want to filter budget and financial health analysis so that I can refine financial monitoring by analytical context. | Medium | 2 | 3 |
+| US43 | Budget and Financial Health | As a manager, I want to view a financial summary table so that I can compare budget, actual cost, financial health, and projected overrun. | Medium | 2 | 3 |
 
 ## Delivery Schedule
 
@@ -141,7 +146,7 @@ The solution is expected to answer questions such as:
 | Sprint Review / Planning | 2026-04-06 | 2026-04-10 | - |
 | Sprint 2 | 2026-04-13 | 2026-05-03 | [Sprint 2](docs/backlog/sprint-2-backlog.md) |
 | Sprint Review / Planning | 2026-05-04 | 2026-05-08 | - |
-| Sprint 3 | 2026-05-11 | 2026-05-31 | - |
+| Sprint 3 | 2026-05-11 | 2026-05-31 | [Sprint 3](docs/backlog/sprint-3-backlog.md) |
 | Sprint Review / Planning | 2026-06-01 | 2026-06-05 | - |
 | Solutions Fair | 2026-06-11 | 2026-06-11 | - |
 
