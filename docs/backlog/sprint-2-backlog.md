@@ -386,7 +386,7 @@ The system must classify projects according to the defined financial health rule
 - [Sprint 2 Presentation](../../assets/sprint-2/sprint-presentation-2.pdf)
 
 ### Demo Video
-- [Assistir Demo - Sprint 2](https://youtu.be/tK6LrtMTIPs)
+- [Assistir Demo - Sprint 2](https://youtu.be/yVzfjOXz6Lg)
 
 ---
 
