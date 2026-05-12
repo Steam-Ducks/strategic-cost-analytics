@@ -166,6 +166,7 @@ The solution is expected to answer questions such as:
 - [Version Control and Branching Strategy](docs/process/branch-strategy.md)
 - [Continuous Integration Strategy](docs/process/continuous-integration-strategy.md)
 - [Commit Standard](docs/process/commit-standard.md)
+- [ETL Process Documentation](https://github.com/Steam-Ducks/strategic-cost-analytics/wiki/ETL-Process-Documentation)
 
 ## Definition of Ready (DoR) and Definition of Done (DoD)
 
