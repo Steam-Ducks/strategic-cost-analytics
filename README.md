@@ -40,7 +40,7 @@ The solution is expected to answer questions such as:
 - What is the financial health classification of each project?
 - Which projects are at risk of budget overrun?
 
-## Functional Requirements
+## Functional Requirements 
 
 | ID | Functional Requirement | Related User Stories |
 |---|---|---|
@@ -70,6 +70,7 @@ The solution is expected to answer questions such as:
 | FR24 | Display financial health indicators and monitoring cards. | US41 |
 | FR25 | Filter financial analysis by period, project, program, and financial classification. | US42 |
 | FR26 | Display financial summary tables with budget, actual cost, and projected overrun. | US43 |
+[Detalhes](https://github.com/Steam-Ducks/strategic-cost-analytics/wiki/Functional-and-Non%E2%80%90Functional-Requirements)
 
 ## Non-Functional Requirements
 
@@ -152,6 +153,14 @@ The solution is expected to answer questions such as:
 
 ## Documentation
 
+### Wiki
+Detailed technical and business documentation is available in the GitHub Wiki.
+
+- [Functional and Non-Functional Requirements](https://github.com/Steam-Ducks/strategic-cost-analytics/wiki/Functional-and-Non%E2%80%90Functional-Requirements)
+- [Database Modeling](https://github.com/Steam-Ducks/strategic-cost-analytics/wiki)
+- [Infrastructure and DevOps](https://github.com/Steam-Ducks/strategic-cost-analytics/wiki)
+- [ETL Process Documentation](https://github.com/Steam-Ducks/strategic-cost-analytics/wiki/ETL-Process-Documentation)
+
 ### Database
 - [Database Model](docs/database/README.md)
 
@@ -161,12 +170,9 @@ The solution is expected to answer questions such as:
 - [Sprint 3](docs/backlog/sprint-3-backlog.md)
 
 ### Technical and Process
-<!--- [Installation Guide](docs/manuals/installation-guide.md)
-- [User Guide](docs/manuals/user-guide.md)-->
 - [Version Control and Branching Strategy](docs/process/branch-strategy.md)
 - [Continuous Integration Strategy](docs/process/continuous-integration-strategy.md)
 - [Commit Standard](docs/process/commit-standard.md)
-- [ETL Process Documentation](https://github.com/Steam-Ducks/strategic-cost-analytics/wiki/ETL-Process-Documentation)
 
 ## Definition of Ready (DoR) and Definition of Done (DoD)
 
